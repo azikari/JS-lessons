@@ -183,3 +183,174 @@
 
 // console.log(makePalindrome(123)); 
 // console.log(makePalindrome(56));  
+
+
+// function sayHello() {
+//     console.log("Hello!");
+// }
+
+// sayHello();
+
+// function greet(name) {
+//     let message = 'Hello, ' + name + '!';
+//     alert(message);
+// }
+
+// greet("Masha");
+// greet("Ivan");  
+
+
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// console.log(sum(3, 5)); 
+// console.log(sum(10, 20)); 
+
+
+// function isEven (n) {
+//     return n % 2 === 0;
+
+// }
+
+// console.log(isEven(4)); 
+// console.log(isEven(7));
+
+
+// function maxNumber(a, b) {
+//     return (a > b) ? a : b;
+// }
+
+// console.log(maxNumber(10, 20)); 
+// console.log(maxNumber(50, 30)); 
+
+
+// function sumArray(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+
+// console.log(sumArray([1, 2, 3, 4]));
+// console.log(sumArray([10, 20, 30])); 
+
+
+// function findEvenNumbers(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             result.push(arr[i]);
+
+//         }
+//     }
+//     return result;
+// }
+// console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+// function sumEvenNumbers(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             sum += arr[i];
+//         }
+//     }
+//     return sum;
+// }
+// console.log(sumEvenNumbers([1, 2, 3, 4, 6, 7, 8, 9, 10])); 
+
+
+// function getStringLength(str) {
+//     return str.length;
+// }
+// console.log(getStringLength("hello")); 
+// console.log(getStringLength("JavaScript")); 
+
+
+// function getFirstChar(str) {
+//     return str[0];
+// }
+// console.log(getFirstChar("apple")); 
+
+
+// function getMaxNumber(arr) {
+//     let max = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(getMaxNumber([1, 5, 3, 9, 2, 11])); 
+
+
+// function countElements(arr) {
+//     return arr.length;
+// }
+// console.log(countElements([1, 2, 3, 4])); 
+
+
+// function numbersGreaterThanTen(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > 10) {
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+// console.log(numbersGreaterThanTen([5, 12, 8, 20, 3, 15]));
+
+
+// function startsWithA (arr) {
+//     return arr[0] === "a"
+// }
+// console.log(startsWithA("apple"));
+// console.log(startsWithA("banana"));
+
+
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num, 0);
+// }
+// console.log(sum(1, 2, 3, 4)); 
+
+
+// function multiply(a, b) {
+//     return a * b;
+// }
+// const result = multiply(4, 5); 
+// console.log(result);
+
+
+// function factorial(n) {
+//     if (n === 1) return 1;
+//     return n * factorial(n - 1);
+// }
+// console.log(factorial(5)); 
+
+
+// function fibonacci(n) {
+//     if (n <= 1) {
+//         return n;
+//     } else {
+//         return fibonacci(n - 1) + fibonacci(n - 2); 
+//     }
+// }
+
+// console.log(fibonacci(6)); 
+
+
+// function makeMultiplier(multiplier) {
+//   return function(number) {
+//     return number * multiplier;
+//   };
+// }
+
+// const multiplyBy2 = makeMultiplier(2);
+// const multiplyBy3 = makeMultiplier(3);
+
+// console.log(multiplyBy2(10)); 
+// console.log(multiplyBy3(10)); 
