@@ -256,3 +256,223 @@
 // console.log(oneDigit);
 // console.log(twoDigits);
 // console.log(threeDigits);
+
+// functions
+// №1
+// function isPrime(number) {
+//   if (number <= 1) return false;
+
+//   for (let i = 2; i < number; i++) {
+//     if (number % i === 0) {
+//       return false; 
+//     }
+//   }
+
+//   return true; 
+// }
+
+// console.log(isPrime(7));  
+// console.log(isPrime(10));
+// console.log(isPrime(1));  
+// console.log(isPrime(13)); 
+
+// №2
+// function isEven(number) {
+//     if (number % 2 === 0) {
+//         return "The number is even";
+//     } else {
+//         return "The number is odd"
+//     }
+// }
+
+// console.log(isEven(4)); 
+// console.log(isEven(7));  
+
+// №4
+// function double(number) {
+//     return number * 2;
+// }
+
+// console.log(double(20));
+
+// №5
+// function factorial(n) {
+//     if (n === 1) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);
+//     }
+// }
+
+// console.log(factorial(5)); 
+
+// №6
+// function square(number) {
+//     return number * number;
+// }
+
+// console.log(square(5));
+
+// №7
+// function isPositive(number) {
+//     if (number > 0 ) return true;
+//     else {
+//         return false;
+//     }
+// }
+
+// console.log(isPositive(5));  
+// console.log(isPositive(-3)); 
+// console.log(isPositive(0)); 
+
+// #Task
+// №1
+// function calculate(a, b, operation) {
+//   if (operation === "add") {
+//     return a + b;
+//   } else if (operation === "subtract") {
+//     return a - b;
+//   } else if (operation === "multiply") {
+//     return a * b;
+//   } else if (operation === "divide") {
+//     if (b === 0) {
+//       return "Cannot divide by zero";
+//     }
+//     return a / b;
+//   } else {
+//     return "Unknown operation";
+//   }
+// }
+
+// console.log(calculate(5, 3, "add"));     
+// console.log(calculate(10, 2, "divide")); 
+// console.log(calculate(7, 2, "multiply")); 
+// console.log(calculate(9, 4, "subtract")); 
+// console.log(calculate(5, 0, "divide")); 
+
+// №2
+// function evenOdd(...numbers) { 
+//     const even = [];
+//     const odd = [];
+
+//     for (let num of numbers) {
+//         if (num % 2 === 0) {
+//             even.push(num); 
+//         } else {
+//             odd.push(num);  
+//         }
+//     }
+
+//     return [even, odd]; 
+// }
+
+// const [evenNumbers, oddNumbers] = evenOdd(14, 20, 35, 40, 57, 60, 100);
+
+// console.log("Even numbers:", evenNumbers);
+// console.log("Odd numbers:", oddNumbers);
+
+// №3
+// function sumElement(numbers) {
+//     let sum = 0;
+
+//     for (let num of numbers) {
+//         if (num % 4 === 0 && num % 5 === 0) {
+//             sum += num;
+//         }
+//     }
+
+//     return sum;
+// }
+
+// const result = sumElement([14, 20, 35, 40, 57, 60, 100]);
+// console.log(result); 
+
+// №4
+// function countChar(str, char) {
+//     let count = 0
+
+//     for (let symbol of str) {
+//         if (symbol == char) {
+//             count += 1;
+//         }
+//     }
+//     return count;
+// }
+
+// function countChar(str, char) {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === char) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countChar("hello world", "l"));
+// console.log(countChar("javascript", "a"));  
+
+// №5
+// function checkNumber(number) {
+//     if (number <= 0) {
+//         return "Invalid number";
+//     }
+
+//     let sum = 0;
+
+//     for (let i = 1; i < number; i++) {
+//         if (number % i === 0) {
+//             sum += i;
+//         }
+//     }
+
+//     if (sum > number) {
+//         return "Abundant";
+//     } else if (sum < number) {
+//         return "Deficient";
+//     } else {
+//         return "Perfect";
+//     }
+// }
+
+// console.log(checkNumber(12));
+// console.log(checkNumber(13));
+// console.log(checkNumber(6));
+// console.log(checkNumber(1));
+
+// №6
+// function squareNumbers(numbers) {
+//     const squares = [];
+
+//     for (let num of numbers) {
+//         squares.push(num * num);
+//     }
+//     return squares;
+// }
+
+// const arr = [14, 20, 35, 40, 57, 60, 100];
+// console.log(squareNumbers(arr));
+
+// №7
+// const people = [
+//   { name: "Arzu", age: 21 },
+//   { name: "Karima", age: 22 },
+//   { name: "Omar", age: 17 }
+// ];
+
+// let minAge = people[0].age;
+// let maxAge = people[0].age;
+
+// for (let person of people) {
+//     if (person.age < minAge) {
+//         minAge = person.age;
+//     }
+
+//     if (person.age > maxAge) {
+//         maxAge = person.age;
+//     }
+// }
+
+// let difference = maxAge - minAge;
+
+// console.log([minAge, maxAge, difference]);
