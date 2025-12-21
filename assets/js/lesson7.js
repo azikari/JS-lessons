@@ -519,3 +519,9 @@
 // console.log(numbers);
 // console.log(numbers.reduce((sum, n) => sum + n, 0));
 
+// let numbers = [1,2,3,4,5,6];
+// let sum = numbers
+//   .filter(n => n % 2 === 0)
+//   .map(n => n * 3)
+//   .reduce((total, n) => total + n, 0);
+// console.log(sum); 
