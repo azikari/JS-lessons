@@ -525,3 +525,174 @@
 //   .map(n => n * 3)
 //   .reduce((total, n) => total + n, 0);
 // console.log(sum); 
+
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.forEach(n => console.log(n * 2));
+
+// let str = ["Arzu", "Karima", "Omar"];
+// str.forEach(i => console.log(i.length));
+
+// let users = [
+//   { name: "Arzu", age: 21 },
+//   { name: "Karima", age: 22 },
+//   { name: "Omar", age: 17 }
+// ];
+
+// users.forEach(user => (console.log(`${user.name}, ${user.age}`)));
+
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.splice(2, 2);
+// console.log(numbers);
+
+// let arr = ["apple", "banana", "orange"];
+// arr.splice(1, 1, "pear");
+// console.log(arr);
+
+// let numbers = [50, 150, 200, 250, 300];
+// numbers.splice(1, 0, 100);
+// console.log(numbers);
+
+// let numbers = [2, 9, 10, 16, 25, 27];
+// console.log(numbers.reduce((sum, n) => sum + n, 0)); 
+
+// let numbers = [2, 9, 10, 16, 25, 27];
+// console.log(numbers.reduce((a, b) => a > b ? a : b));
+
+// let str = ["Hello", ",", "how", "are", "you", "?"];
+// console.log(str.reduce((a, b) => a + " " + b));
+
+// let prices = [
+//     {item: "bag", price: 100},
+//     {item: "sneaker", price: 150},
+//     {item: "jacket", price: 120}
+// ];
+
+// console.log(prices.reduce((sum, n) => sum + n.price, 0));
+
+// let str = ["k", "a", "r", "i", "m", "a"];
+// console.log(str.reduceRight((acc, val) => acc + val, ""));
+
+// let numbers = [2, 9, 10, 25, 27, 16, 23];
+// console.log(numbers.reduceRight((acc, n) => acc - n, 0));
+
+// let arr = ["a", "b", "c", "d"];
+// console.log(arr.reduceRight((acc, n) => acc +  "-" + n));
+
+//  let numbers = [1, 2, 3, 4];
+//  console.log(numbers.reduce((a, b) => a * b))
+
+// let numbers = [5, 10, 3, 8];
+// console.log(numbers.reduce((a, b) => a < b ? a : b));
+
+// let str = ["I", "love", "JS"]; 
+// console.log(str.reduceRight((acc, val) => acc + " " + val));
+
+// let object = [
+//     {name: "A", score: 50}, 
+//     {name: "B", score: 70}, 
+//     {name: "C", score: 60}
+// ];
+// console.log(object.reduce((a, b) => a.score > b.score ? a : b));
+
+// let numbers = [10, -5, 20, -3, 15];
+// console.log(numbers.reduce((sum, num) => num > 0 ? sum + num : sum, 0));
+
+// let arr = ["a", "b", "c"];
+// console.log(arr.reduce((acc, curr, i) => (acc[i] = curr, acc), {}));
+
+// let fruits = ["apple", "banana", "apple", "orange", "banana"];
+// console.log(fruits.reduce((acc, fruit) => (acc[fruit] = (acc[fruit] || 0) + 1, acc), {}));
+
+// let arrays = [[1,2], [3,4], [5]];
+// console.log(arrays.flat());
+
+// let arrays = [
+//     {name:"A"}, 
+//     {name:"B"}, 
+//     {name:"C"}
+// ];
+
+// console.log(arrays.reduceRight((a, b) =>  a.name ? a.name + "-" + b.name : a + "-" + b.name));
+
+// let items = [
+//   { price: 100, taxRate: 0.2 },
+//   { price: 50, taxRate: 0.1 },
+//   { price: 200, taxRate: 0.15 }
+// ];
+
+// console.log(items.reduce((sum, item) => sum + item.price * (1 + item.taxRate), 0));
+
+// let str = "abcdef";
+// let firstThree = str.slice(0, 3);
+// console.log(firstThree.includes("c"));
+
+// const user = {
+//     name: "Max",
+//     hi() {
+//         console.log(this.name);
+//     }
+// };
+// user.hi();
+
+// const arr = [1, 2, 3];
+// arr.forEach((item, index, array) => {
+//   console.log(item, index);
+// });
+
+// const arr = [1, 2, 3, 4, 5];
+// arr.copyWithin(0, 3, 5);
+// console.log(arr);
+
+// const arr = [1, 2, 3, 4];
+// arr.fill(0, 1, 3);
+// console.log(arr); // [1, 0, 0, 4]
+
+// const map = new Map();
+
+// map.set("name", "Max");
+// map.set(1, "one");
+
+// console.log(map.get("name")); 
+
+// for (const [key, value] of map) {
+//   console.log(key, value);
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] % 2 === 0) {
+//         console.log(arr[i]);
+//     }
+// }
+
+// let map = new Map();
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.map(num => num * 2));
+
+// const arr = [1, 2, 3];
+// const [a, b, c] = arr; 
+// console.log(a); 
+// console.log(b); 
+// console.log(c); 
+
+// const arr = [1, 2, 3];
+// const [x, , z] = arr; 
+// console.log(x);
+// console.log(z);
+
+// const person = { name: "Arzu", age: 25 };
+// const { name, age } = person;  
+// console.log(name);
+// console.log(age);  
+
+// const arr = [1, 2, 3];
+// const obj = { name: "Arzu", job: "developer" };
+// const [x, y] = arr;
+// const { name, job } = obj;
+// console.log(x); 
+// console.log(name); 
+
+// const person = { name: "Arzu" };
+// const { name, age = 30 } = person; 
+// console.log(name); 
+// console.log(age);  
